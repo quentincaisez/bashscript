@@ -1,0 +1,17 @@
+echo "Do you want to go on ? ";
+choix="";
+select yn in "Yes" "No";do
+  case $yn in
+     Yes )  choix="OUI" ; break ;;
+     No )  choix="NON" ; break ;;
+  esac
+done
+
+if [ "$choix" == "OUI" ]
+then
+    echo " tu as dit oui c'est bien ";
+elif [ "$choix" == "NON" ]
+then
+    echo " tu as dit non on arrete " ;
+fi
+
